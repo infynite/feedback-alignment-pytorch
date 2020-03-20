@@ -1,4 +1,5 @@
 # Feedback Alignment in PyTorch
+**This version is forked and fixed some conflictions that main implementation had with new pytorch version and upgraded to Python3**
 
 This is a simple implementation of [Random synaptic feedback weights support error backpropagation for deep learning](https://www.nature.com/articles/ncomms13276) in PyTorch.
 
