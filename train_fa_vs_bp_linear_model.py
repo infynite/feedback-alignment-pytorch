@@ -44,7 +44,7 @@ logger_train = open(results_path + 'train_log.txt', 'w')
 
 # train loop
 epochs = 1000
-for epoch in xrange(epochs):
+for epoch in range(epochs):
     for idx_batch, (inputs, targets) in enumerate(train_loader):
         # flatten the inputs from square image to 1d vector
         inputs = inputs.view(BATCH_SIZE, -1)
@@ -65,8 +65,8 @@ for epoch in xrange(epochs):
         loss_bp.backward()
         optimizer_bp.step()
 
-        if (idx_batch + 1) % 10 == 0:
+        if (idx_batch + 1) % 1000 == 0 or idx_batch + 1 == len(train_loader):
             train_log = 'epoch ' + str(epoch) + ' step ' + str(idx_batch + 1) + \
-                        ' loss_fa ' + str(loss_fa.data[0]) + ' loss_bp ' + str(loss_bp.data[0])
+                        ' loss_fa ' + str(loss_fa.data.item()) + ' loss_bp ' + str(loss_bp.data.item())
             print(train_log)
             logger_train.write(train_log + '\n')
