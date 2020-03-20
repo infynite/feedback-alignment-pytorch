@@ -11,107 +11,58 @@ Run train_fa_vs_bp_linear_model.py to compare performance between feedback align
 
 ## Test Results
 Loss Comparison on MNIST:
-
-epoch 0 step 1000 loss_fa 0.46798 loss_bp 0.35344
-
-epoch 0 step 1875 loss_fa 0.42992 loss_bp 0.39659
-
-epoch 1 step 1000 loss_fa 0.43433 loss_bp 0.37663
-
-epoch 1 step 1875 loss_fa 0.29304 loss_bp 0.21735
-
-epoch 2 step 1000 loss_fa 0.41269 loss_bp 0.38590
-
-epoch 2 step 1875 loss_fa 0.23184 loss_bp 0.24429
-
-epoch 3 step 1000 loss_fa 0.35857 loss_bp 0.25014
-
-epoch 3 step 1875 loss_fa 0.08632 loss_bp 0.06498
-
-epoch 4 step 1000 loss_fa 0.18751 loss_bp 0.13469
-
-epoch 4 step 1875 loss_fa 0.45113 loss_bp 0.39115
-
-epoch 5 step 1000 loss_fa 0.26102 loss_bp 0.16991
-
-epoch 5 step 1875 loss_fa 0.16346 loss_bp 0.13278
-
-epoch 6 step 1000 loss_fa 0.29775 loss_bp 0.14079
-
-epoch 6 step 1875 loss_fa 0.50019 loss_bp 0.42758
-
-epoch 7 step 1000 loss_fa 0.26730 loss_bp 0.20934
-
-epoch 7 step 1875 loss_fa 0.18355 loss_bp 0.11935
-
-epoch 8 step 1000 loss_fa 0.46082 loss_bp 0.27962
-
-epoch 8 step 1875 loss_fa 0.16061 loss_bp 0.15758
-
-epoch 9 step 1000 loss_fa 0.17815 loss_bp 0.10925
-
-epoch 9 step 1875 loss_fa 0.23911 loss_bp 0.17510
-
-epoch 10 step 1000 loss_fa 0.55483 loss_bp 0.36205
-
-epoch 10 step 1875 loss_fa 0.09864 loss_bp 0.07822
-
-epoch 11 step 1000 loss_fa 0.22050 loss_bp 0.06755
-
-epoch 11 step 1875 loss_fa 0.30027 loss_bp 0.28331
-
-epoch 12 step 1000 loss_fa 0.30410 loss_bp 0.22639
-
-epoch 12 step 1875 loss_fa 0.23802 loss_bp 0.12401
-
-epoch 13 step 1000 loss_fa 0.38504 loss_bp 0.31829
-
-epoch 13 step 1875 loss_fa 0.31254 loss_bp 0.17021
-
-epoch 14 step 1000 loss_fa 0.30799 loss_bp 0.16914
-
-epoch 14 step 1875 loss_fa 0.08483 loss_bp 0.05910
-
-epoch 15 step 1000 loss_fa 0.11392 loss_bp 0.07960
-
-epoch 15 step 1875 loss_fa 0.33861 loss_bp 0.30033
-
-epoch 16 step 1000 loss_fa 0.53456 loss_bp 0.25107
-
-epoch 16 step 1875 loss_fa 0.29415 loss_bp 0.14761
-
-epoch 17 step 1000 loss_fa 0.14059 loss_bp 0.07061
-
-epoch 17 step 1875 loss_fa 0.10071 loss_bp 0.06098
-
-epoch 18 step 1000 loss_fa 0.34540 loss_bp 0.13852
-
-epoch 18 step 1875 loss_fa 0.32415 loss_bp 0.16791
-
-epoch 19 step 1000 loss_fa 0.34725 loss_bp 0.24961
-
-epoch 19 step 1875 loss_fa 0.34411 loss_bp 0.19213
-
-epoch 20 step 1000 loss_fa 0.14642 loss_bp 0.09837
-
-epoch 20 step 1875 loss_fa 0.06806 loss_bp 0.04413
-
-epoch 21 step 1000 loss_fa 0.16839 loss_bp 0.04480
-
-epoch 21 step 1875 loss_fa 0.15662 loss_bp 0.08321
-
-epoch 22 step 1000 loss_fa 0.24548 loss_bp 0.09513
-
-epoch 22 step 1875 loss_fa 0.24273 loss_bp 0.07480
-
-epoch 23 step 1000 loss_fa 0.33001 loss_bp 0.14574
-
-epoch 23 step 1875 loss_fa 0.27394 loss_bp 0.17840
-
-epoch 24 step 1000 loss_fa 0.27252 loss_bp 0.10221
-
-epoch 24 step 1875 loss_fa 0.39897 loss_bp 0.24693
-
-epoch 25 step 1000 loss_fa 0.25453 loss_bp 0.12092
-
-epoch 25 step 1875 loss_fa 0.51975 loss_bp 0.14524
+epoch | step | feed alignment loss | back propagation loss
+--- | --- | --- | ---
+0 | 1000 | 0.46798 | 0.35344 
+0 | 1875 | 0.42992 | 0.39659 
+1 | 1000 | 0.43433 | 0.37663 
+1 | 1875 | 0.29304 | 0.21735 
+2 | 1000 | 0.41269 | 0.38590 
+2 | 1875 | 0.23184 | 0.24429 
+3 | 1000 | 0.35857 | 0.25014 
+3 | 1875 | 0.08632 | 0.06498 
+4 | 1000 | 0.18751 | 0.13469 
+4 | 1875 | 0.45113 | 0.39115 
+5 | 1000 | 0.26102 | 0.16991 
+5 | 1875 | 0.16346 | 0.13278 
+6 | 1000 | 0.29775 | 0.14079 
+6 | 1875 | 0.50019 | 0.42758 
+7 | 1000 | 0.26730 | 0.20934 
+7 | 1875 | 0.18355 | 0.11935 
+8 | 1000 | 0.46082 | 0.27962 
+8 | 1875 | 0.16061 | 0.15758 
+9 | 1000 | 0.17815 | 0.10925 
+9 | 1875 | 0.23911 | 0.17510 
+10 | 1000 | 0.55483 | 0.36205 
+10 | 1875 | 0.09864 | 0.07822 
+11 | 1000 | 0.22050 | 0.06755 
+11 | 1875 | 0.30027 | 0.28331 
+12 | 1000 | 0.30410 | 0.22639 
+12 | 1875 | 0.23802 | 0.12401 
+13 | 1000 | 0.38504 | 0.31829 
+13 | 1875 | 0.31254 | 0.17021 
+14 | 1000 | 0.30799 | 0.16914 
+14 | 1875 | 0.08483 | 0.05910 
+15 | 1000 | 0.11392 | 0.07960 
+15 | 1875 | 0.33861 | 0.30033 
+16 | 1000 | 0.53456 | 0.25107 
+16 | 1875 | 0.29415 | 0.14761 
+17 | 1000 | 0.14059 | 0.07061 
+17 | 1875 | 0.10071 | 0.06098 
+18 | 1000 | 0.34540 | 0.13852 
+18 | 1875 | 0.32415 | 0.16791 
+19 | 1000 | 0.34725 | 0.24961 
+19 | 1875 | 0.34411 | 0.19213 
+20 | 1000 | 0.14642 | 0.09837 
+20 | 1875 | 0.06806 | 0.04413 
+21 | 1000 | 0.16839 | 0.04480 
+21 | 1875 | 0.15662 | 0.08321 
+22 | 1000 | 0.24548 | 0.09513 
+22 | 1875 | 0.24273 | 0.07480 
+23 | 1000 | 0.33001 | 0.14574 
+23 | 1875 | 0.27394 | 0.17840 
+24 | 1000 | 0.27252 | 0.10221 
+24 | 1875 | 0.39897 | 0.24693 
+25 | 1000 | 0.25453 | 0.12092 
+25 | 1875 | 0.51975 | 0.14524 
+26 | 1000 | 0.24217 | 0.09227 
